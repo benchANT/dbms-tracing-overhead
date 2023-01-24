@@ -1,0 +1,327 @@
+bin/ycsb load jdbc -s -jvm-args=-XX:MaxRAMPercentage=85.0  -p db.url=jdbc:mysql://172.31.16.253:3306/benchdb -p  db.driver=com.mysql.jdbc.Driver  -p  db.user=root -p  db.passwd=pCm9YZpSAres -p  db.batchsize=1000  -p  jdbc.batchupdateapi=true  -p workload=site.ycsb.workloads.CoreWorkload -threads 50 -p recordcount=2000000 -p operationcount=54000000 -p fieldcount=10 -p fieldlength=500 -p requestdistribution=zipfian -p insertorder=ordered -p readproportion=0.1 -p updateproportion=0.0 -p insertproportion=0.9 -p scanproportion=0.0 -p scanlengthdistribution=uniform -p core_workload_insertion_retry_limit=3 -p core_workload_insertion_retry_interval=3
+/usr/java/bin/java -XX:MaxRAMPercentage=85.0 -cp /binary/ycsb/jdbc-binding/conf:/binary/ycsb/conf:/binary/ycsb/lib/HdrHistogram-2.1.4.jar:/binary/ycsb/lib/jackson-core-asl-1.9.4.jar:/binary/ycsb/lib/core-0.17.0.jar:/binary/ycsb/lib/jackson-mapper-asl-1.9.4.jar:/binary/ycsb/lib/htrace-core4-4.1.0-incubating.jar:/binary/ycsb/jdbc-binding/lib/mysql-connector-java-5.1.47.jar:/binary/ycsb/jdbc-binding/lib/crate-jdbc-standalone-2.6.0.jar:/binary/ycsb/jdbc-binding/lib/mariadb-java-client-3.0.5.jar:/binary/ycsb/jdbc-binding/lib/openjpa-jdbc-2.1.1.jar:/binary/ycsb/jdbc-binding/lib/commons-collections-3.2.1.jar:/binary/ycsb/jdbc-binding/lib/commons-pool-1.5.4.jar:/binary/ycsb/jdbc-binding/lib/serp-1.13.1.jar:/binary/ycsb/jdbc-binding/lib/openjpa-lib-2.1.1.jar:/binary/ycsb/jdbc-binding/lib/commons-lang-2.4.jar:/binary/ycsb/jdbc-binding/lib/geronimo-jta_1.1_spec-1.1.1.jar:/binary/ycsb/jdbc-binding/lib/jdbc-binding-0.17.0.jar:/binary/ycsb/jdbc-binding/lib/geronimo-jms_1.1_spec-1.1.1.jar:/binary/ycsb/jdbc-binding/lib/postgresql-42.2.5.jar:/binary/ycsb/jdbc-binding/lib/openjpa-kernel-2.1.1.jar:/binary/ycsb/jdbc-binding/lib/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47-bin.jar:/binary/ycsb/jdbc-binding/lib/mysql-connector-java-5.1.47/src/lib/jboss-common-jdbc-wrapper.jar:/binary/ycsb/jdbc-binding/lib/mysql-connector-java-5.1.47/src/lib/c3p0-0.9.1-pre6.jar:/binary/ycsb/jdbc-binding/lib/mysql-connector-java-5.1.47/src/lib/slf4j-api-1.6.1.jar:/binary/ycsb/jdbc-binding/lib/mysql-connector-java-5.1.47/src/lib/jboss-common-jdbc-wrapper-src.jar site.ycsb.Client -db site.ycsb.db.JdbcDBClient -s -p db.url=jdbc:mysql://172.31.16.253:3306/benchdb -p db.driver=com.mysql.jdbc.Driver -p db.user=root -p db.passwd=pCm9YZpSAres -p db.batchsize=1000 -p jdbc.batchupdateapi=true -p workload=site.ycsb.workloads.CoreWorkload -threads 50 -p recordcount=2000000 -p operationcount=54000000 -p fieldcount=10 -p fieldlength=500 -p requestdistribution=zipfian -p insertorder=ordered -p readproportion=0.1 -p updateproportion=0.0 -p insertproportion=0.9 -p scanproportion=0.0 -p scanlengthdistribution=uniform -p core_workload_insertion_retry_limit=3 -p core_workload_insertion_retry_interval=3 -load
+Command line: -db site.ycsb.db.JdbcDBClient -s -p db.url=jdbc:mysql://172.31.16.253:3306/benchdb -p db.driver=com.mysql.jdbc.Driver -p db.user=root -p db.passwd=pCm9YZpSAres -p db.batchsize=1000 -p jdbc.batchupdateapi=true -p workload=site.ycsb.workloads.CoreWorkload -threads 50 -p recordcount=2000000 -p operationcount=54000000 -p fieldcount=10 -p fieldlength=500 -p requestdistribution=zipfian -p insertorder=ordered -p readproportion=0.1 -p updateproportion=0.0 -p insertproportion=0.9 -p scanproportion=0.0 -p scanlengthdistribution=uniform -p core_workload_insertion_retry_limit=3 -p core_workload_insertion_retry_interval=3 -load
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+2023-01-09 15:21:08:549 0 sec: 0 operations; est completion in 0 second 
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Adding shard node URL: jdbc:mysql://172.31.16.253:3306/benchdb
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jan 09 15:21:08 UTC 2023 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []Using shards: 1, batchSize:1000, fetchSize: -1
+
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Using shards: 1, batchSize:1000, fetchSize: -1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2023-01-09 15:21:18:531 10 sec: 49950 operations; 4995 current ops/sec; est completion in 6 minutes [INSERT: Count=49950, Max=121919, Min=58, Avg=1002.48, 90=173, 99=34431, 99.9=67967, 99.99=97855] 
+2023-01-09 15:21:28:531 20 sec: 49950 operations; 0 current ops/sec; est completion in 13 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:21:38:531 30 sec: 49950 operations; 0 current ops/sec; est completion in 19 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:21:48:531 40 sec: 99950 operations; 5000 current ops/sec; est completion in 12 minutes [INSERT: Count=50000, Max=30130175, Min=58, Avg=29526.96, 90=101, 99=146, 99.9=32031, 99.99=29835263] 
+2023-01-09 15:21:58:531 50 sec: 99950 operations; 0 current ops/sec; est completion in 15 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:22:08:531 60 sec: 149950 operations; 5000 current ops/sec; est completion in 12 minutes [INSERT: Count=50000, Max=28409855, Min=57, Avg=27723.76, 90=101, 99=144, 99.9=91455, 99.99=28262399] 
+2023-01-09 15:22:18:531 70 sec: 149950 operations; 0 current ops/sec; est completion in 14 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:22:28:531 80 sec: 149950 operations; 0 current ops/sec; est completion in 16 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:22:38:531 90 sec: 199950 operations; 5000 current ops/sec; est completion in 13 minutes [INSERT: Count=50000, Max=27901951, Min=58, Avg=26301.81, 90=91, 99=101, 99.9=28095, 99.99=26673151] 
+2023-01-09 15:22:48:531 100 sec: 199950 operations; 0 current ops/sec; est completion in 15 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:22:58:531 110 sec: 245950 operations; 4600 current ops/sec; est completion in 13 minutes [INSERT: Count=46000, Max=25296895, Min=57, Avg=23957.36, 90=103, 99=146, 99.9=43615, 99.99=24756223] 
+2023-01-09 15:23:08:531 120 sec: 249950 operations; 400 current ops/sec; est completion in 14 minutes [INSERT: Count=4000, Max=24166399, Min=58, Avg=23941.62, 90=65, 99=87, 99.9=124, 99.99=24166399] 
+2023-01-09 15:23:18:531 130 sec: 249950 operations; 0 current ops/sec; est completion in 15 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:23:28:531 140 sec: 299950 operations; 5000 current ops/sec; est completion in 13 minutes [INSERT: Count=50000, Max=24379391, Min=57, Avg=23421.59, 90=71, 99=99, 99.9=38495, 99.99=23937023] 
+2023-01-09 15:23:38:531 150 sec: 299950 operations; 0 current ops/sec; est completion in 14 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:23:48:531 160 sec: 349950 operations; 5000 current ops/sec; est completion in 12 minutes [INSERT: Count=50000, Max=24707071, Min=57, Avg=23834.5, 90=79, 99=100, 99.9=160, 99.99=24281087] 
+2023-01-09 15:23:58:531 170 sec: 349950 operations; 0 current ops/sec; est completion in 13 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:24:08:531 180 sec: 378666 operations; 2871.6 current ops/sec; est completion in 12 minutes [INSERT: Count=28724, Max=23642111, Min=58, Avg=24027.33, 90=107, 99=143, 99.9=22183935, 99.99=23281663] 
+2023-01-09 15:24:18:531 190 sec: 399950 operations; 2128.4 current ops/sec; est completion in 12 minutes [INSERT: Count=21276, Max=23724031, Min=58, Avg=21808.7, 90=65, 99=88, 99.9=124, 99.99=23412735] 
+2023-01-09 15:24:28:531 200 sec: 402950 operations; 300 current ops/sec; est completion in 13 minutes [INSERT: Count=3000, Max=22265855, Min=58, Avg=22150.06, 90=65, 99=87, 99.9=120, 99.99=22265855] 
+2023-01-09 15:24:38:531 210 sec: 449950 operations; 4700 current ops/sec; est completion in 12 minutes [INSERT: Count=47000, Max=23330815, Min=57, Avg=22513.55, 90=65, 99=95, 99.9=150, 99.99=23003135] 
+2023-01-09 15:24:48:531 220 sec: 449950 operations; 0 current ops/sec; est completion in 12 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:24:58:531 230 sec: 499950 operations; 5000 current ops/sec; est completion in 11 minutes [INSERT: Count=50000, Max=23314431, Min=58, Avg=22649.77, 90=70, 99=97, 99.9=38271, 99.99=23035903] 
+2023-01-09 15:25:08:531 240 sec: 499950 operations; 0 current ops/sec; est completion in 12 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:25:18:531 250 sec: 548950 operations; 4900 current ops/sec; est completion in 11 minutes [INSERT: Count=49000, Max=23265279, Min=57, Avg=22643.06, 90=66, 99=96, 99.9=154, 99.99=23019519] 
+2023-01-09 15:25:28:531 260 sec: 549950 operations; 100 current ops/sec; est completion in 11 minutes [INSERT: Count=1000, Max=23199743, Min=58, Avg=23253.19, 90=64, 99=88, 99.9=110, 99.99=23199743] 
+2023-01-09 15:25:38:531 270 sec: 568554 operations; 1860.4 current ops/sec; est completion in 11 minutes [INSERT: Count=18608, Max=23150591, Min=57, Avg=23212.53, 90=79, 99=99, 99.9=149, 99.99=23052287] 
+2023-01-09 15:25:48:531 280 sec: 599950 operations; 3139.6 current ops/sec; est completion in 10 minutes [INSERT: Count=31392, Max=23789567, Min=57, Avg=22828.79, 90=67, 99=97, 99.9=32991, 99.99=23560191] 
+2023-01-09 15:25:58:531 290 sec: 601950 operations; 200 current ops/sec; est completion in 11 minutes [INSERT: Count=2000, Max=23019519, Min=58, Avg=22835.1, 90=64, 99=86, 99.9=101, 99.99=23019519] 
+2023-01-09 15:26:08:531 300 sec: 649950 operations; 4800 current ops/sec; est completion in 10 minutes [INSERT: Count=48000, Max=23592959, Min=57, Avg=23079.76, 90=70, 99=96, 99.9=154, 99.99=23445503] 
+2023-01-09 15:26:18:531 310 sec: 649950 operations; 0 current ops/sec; est completion in 10 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:26:28:531 320 sec: 699950 operations; 5000 current ops/sec; est completion in 9 minutes [INSERT: Count=50000, Max=22659071, Min=57, Avg=22065.18, 90=65, 99=95, 99.9=27103, 99.99=22429695] 
+2023-01-09 15:26:38:531 330 sec: 699950 operations; 0 current ops/sec; est completion in 10 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:26:48:531 340 sec: 745662 operations; 4571.2 current ops/sec; est completion in 9 minutes [INSERT: Count=45715, Max=23216127, Min=57, Avg=22627.54, 90=68, 99=96, 99.9=150, 99.99=22773759] 
+2023-01-09 15:26:58:531 350 sec: 749950 operations; 428.8 current ops/sec; est completion in 9 minutes [INSERT: Count=4285, Max=22872063, Min=58, Avg=21076.14, 90=64, 99=88, 99.9=115, 99.99=22872063] 
+2023-01-09 15:27:08:531 360 sec: 762885 operations; 1293.5 current ops/sec; est completion in 9 minutes [INSERT: Count=12939, Max=22855679, Min=58, Avg=22711.69, 90=64, 99=87, 99.9=143, 99.99=22806527] 
+2023-01-09 15:27:18:531 370 sec: 799950 operations; 3706.5 current ops/sec; est completion in 9 minutes [INSERT: Count=37061, Max=23756799, Min=57, Avg=22855.74, 90=67, 99=96, 99.9=34335, 99.99=23298047] 
+2023-01-09 15:27:28:531 380 sec: 803366 operations; 341.6 current ops/sec; est completion in 9 minutes [INSERT: Count=3419, Max=22691839, Min=58, Avg=26250.15, 90=64, 99=86, 99.9=22151167, 99.99=22691839] 
+2023-01-09 15:27:38:531 390 sec: 849950 operations; 4658.4 current ops/sec; est completion in 8 minutes [INSERT: Count=46581, Max=23281663, Min=58, Avg=22272.05, 90=64, 99=86, 99.9=124, 99.99=22888447] 
+2023-01-09 15:27:48:531 400 sec: 849950 operations; 0 current ops/sec; est completion in 9 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:27:58:531 410 sec: 897950 operations; 4800 current ops/sec; est completion in 8 minutes [INSERT: Count=48000, Max=23314431, Min=57, Avg=22631.52, 90=65, 99=95, 99.9=34015, 99.99=22986751] 
+2023-01-09 15:28:08:531 420 sec: 899950 operations; 200 current ops/sec; est completion in 8 minutes [INSERT: Count=2000, Max=22560767, Min=58, Avg=22614.1, 90=64, 99=85, 99.9=95, 99.99=22560767] 
+2023-01-09 15:28:18:531 430 sec: 929437 operations; 2948.7 current ops/sec; est completion in 8 minutes [INSERT: Count=29490, Max=23707647, Min=58, Avg=23731.04, 90=65, 99=87, 99.9=22773759, 99.99=23609343] 
+2023-01-09 15:28:28:531 440 sec: 949950 operations; 2051.3 current ops/sec; est completion in 8 minutes [INSERT: Count=20510, Max=24182783, Min=58, Avg=22871.51, 90=65, 99=87, 99.9=123, 99.99=23986175] 
+2023-01-09 15:28:38:531 450 sec: 958615 operations; 866.5 current ops/sec; est completion in 8 minutes [INSERT: Count=8668, Max=22904831, Min=57, Avg=23515.69, 90=64, 99=86, 99.9=32335, 99.99=22822911] 
+2023-01-09 15:28:48:531 460 sec: 999950 operations; 4133.5 current ops/sec; est completion in 7 minutes [INSERT: Count=41332, Max=23609343, Min=57, Avg=22601.32, 90=70, 99=97, 99.9=148, 99.99=23183359] 
+2023-01-09 15:28:58:531 470 sec: 1002950 operations; 300 current ops/sec; est completion in 7 minutes [INSERT: Count=3000, Max=22396927, Min=58, Avg=22106.25, 90=64, 99=86, 99.9=110, 99.99=22396927] 
+2023-01-09 15:29:08:531 480 sec: 1049950 operations; 4700 current ops/sec; est completion in 7 minutes [INSERT: Count=47000, Max=23199743, Min=57, Avg=22519.41, 90=66, 99=95, 99.9=29199, 99.99=22986751] 
+2023-01-09 15:29:18:531 490 sec: 1049950 operations; 0 current ops/sec; est completion in 7 minutes [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=?, 90=0, 99=0, 99.9=0, 99.99=0] 
+2023-01-09 15:29:28:531 500 sec: 1095950 operations; 4600 current ops/sec; est completion in 6 minutes [INSERT: Count=46000, Max=23035903, Min=57, Avg=22440.94, 90=65, 99=95, 99.9=143, 99.99=22822911] 
+2023-01-09 15:29:38:531 510 sec: 1099950 operations; 400 current ops/sec; est completion in 6 minutes [INSERT: Count=4000, Max=23150591, Min=58, Avg=22704.32, 90=64, 99=87, 99.9=122, 99.99=23150591] 
+2023-01-09 15:29:48:531 520 sec: 1118398 operations; 1844.8 current ops/sec; est completion in 6 minutes [INSERT: Count=18452, Max=23609343, Min=57, Avg=23854.11, 90=65, 99=86, 99.9=22462463, 99.99=23461887] 
+2023-01-09 15:29:58:531 530 sec: 1149950 operations; 3155.2 current ops/sec; est completion in 6 minutes [INSERT: Count=31548, Max=23855103, Min=57, Avg=22973.38, 90=77, 99=98, 99.9=35263, 99.99=23658495] 
+2023-01-09 15:30:08:531 540 sec: 1156401 operations; 645.1 current ops/sec; est completion in 6 minutes [INSERT: Count=6456, Max=23134207, Min=57, Avg=24385.18, 90=65, 99=86, 99.9=22036479, 99.99=22577151] 
+2023-01-09 15:30:18:531 550 sec: 1199950 operations; 4354.9 current ops/sec; est completion in 6 minutes [INSERT: Count=43544, Max=23248895, Min=58, Avg=22419.04, 90=83, 99=101, 99.9=154, 99.99=23052287] 
+2023-01-09 15:30:28:531 560 sec: 1202950 operations; 300 current ops/sec; est completion in 6 minutes [INSERT: Count=3000, Max=21970943, Min=58, Avg=21811.05, 90=64, 99=85, 99.9=109, 99.99=21970943] 
+2023-01-09 15:30:38:531 570 sec: 1246950 operations; 4400 current ops/sec; est completion in 5 minutes [INSERT: Count=44000, Max=22478847, Min=58, Avg=21984.9, 90=65, 99=87, 99.9=27359, 99.99=22216703] 
+2023-01-09 15:30:48:531 580 sec: 1249950 operations; 300 current ops/sec; est completion in 5 minutes [INSERT: Count=3000, Max=23789567, Min=57, Avg=23334.84, 90=64, 99=86, 99.9=116, 99.99=23789567] 
+2023-01-09 15:30:58:531 590 sec: 1292950 operations; 4300 current ops/sec; est completion in 5 minutes [INSERT: Count=43000, Max=23379967, Min=58, Avg=22591, 90=71, 99=98, 99.9=35423, 99.99=22970367] 
+2023-01-09 15:31:08:531 600 sec: 1299950 operations; 700 current ops/sec; est completion in 5 minutes [INSERT: Count=7000, Max=23019519, Min=58, Avg=22560.44, 90=64, 99=87, 99.9=122, 99.99=22806527] 
+2023-01-09 15:31:18:531 610 sec: 1322950 operations; 2300 current ops/sec; est completion in 5 minutes [INSERT: Count=23000, Max=22724607, Min=57, Avg=22255.23, 90=64, 99=86, 99.9=132, 99.99=22675455] 
+2023-01-09 15:31:28:531 620 sec: 1349950 operations; 2700 current ops/sec; est completion in 4 minutes [INSERT: Count=27000, Max=23855103, Min=57, Avg=22727.19, 90=78, 99=99, 99.9=150, 99.99=22986751] 
+2023-01-09 15:31:38:531 630 sec: 1358950 operations; 900 current ops/sec; est completion in 4 minutes [INSERT: Count=9000, Max=22527999, Min=57, Avg=22133.68, 90=65, 99=87, 99.9=117, 99.99=22511615] 
+2023-01-09 15:31:48:531 640 sec: 1399950 operations; 4100 current ops/sec; est completion in 4 minutes [INSERT: Count=41000, Max=22904831, Min=57, Avg=22384.93, 90=82, 99=100, 99.9=148, 99.99=22790143] 
+2023-01-09 15:31:58:531 650 sec: 1403950 operations; 400 current ops/sec; est completion in 4 minutes [INSERT: Count=4000, Max=21823487, Min=57, Avg=21651.81, 90=65, 99=87, 99.9=127, 99.99=21823487] 
+2023-01-09 15:32:08:531 660 sec: 1446950 operations; 4300 current ops/sec; est completion in 4 minutes [INSERT: Count=43000, Max=22904831, Min=57, Avg=21988.37, 90=65, 99=87, 99.9=34015, 99.99=22462463] 
+2023-01-09 15:32:18:531 670 sec: 1449950 operations; 300 current ops/sec; est completion in 4 minutes [INSERT: Count=3000, Max=22806527, Min=58, Avg=22335.85, 90=64, 99=87, 99.9=117, 99.99=22806527] 
+2023-01-09 15:32:28:531 680 sec: 1490534 operations; 4058.4 current ops/sec; est completion in 3 minutes [INSERT: Count=40587, Max=23986175, Min=57, Avg=23498.96, 90=65, 99=88, 99.9=26879, 99.99=23560191] 
+2023-01-09 15:32:38:531 690 sec: 1499950 operations; 941.6 current ops/sec; est completion in 3 minutes [INSERT: Count=9413, Max=23789567, Min=58, Avg=22325.7, 90=86, 99=100, 99.9=140, 99.99=23527423] 
+2023-01-09 15:32:48:531 700 sec: 1511950 operations; 1200 current ops/sec; est completion in 3 minutes [INSERT: Count=12000, Max=24281087, Min=57, Avg=23907.28, 90=65, 99=87, 99.9=121, 99.99=24199167] 
+2023-01-09 15:32:58:531 710 sec: 1549950 operations; 3800 current ops/sec; est completion in 3 minutes [INSERT: Count=38000, Max=24461311, Min=57, Avg=23713.94, 90=72, 99=98, 99.9=35007, 99.99=24199167] 
+2023-01-09 15:33:08:531 720 sec: 1553950 operations; 400 current ops/sec; est completion in 3 minutes [INSERT: Count=4000, Max=22986751, Min=58, Avg=22770.21, 90=66, 99=87, 99.9=108, 99.99=22986751] 
+2023-01-09 15:33:18:531 730 sec: 1596950 operations; 4300 current ops/sec; est completion in 3 minutes [INSERT: Count=43000, Max=23658495, Min=57, Avg=23021.86, 90=68, 99=96, 99.9=135, 99.99=23527423] 
+2023-01-09 15:33:28:531 740 sec: 1601950 operations; 500 current ops/sec; est completion in 3 minutes [INSERT: Count=5000, Max=22904831, Min=57, Avg=22763.59, 90=64, 99=86, 99.9=25791, 99.99=22822911] 
+2023-01-09 15:33:38:531 750 sec: 1643950 operations; 4200 current ops/sec; est completion in 2 minutes [INSERT: Count=42000, Max=23068671, Min=57, Avg=22397.76, 90=64, 99=87, 99.9=127, 99.99=22806527] 
+2023-01-09 15:33:48:531 760 sec: 1649950 operations; 600 current ops/sec; est completion in 2 minutes [INSERT: Count=6000, Max=23068671, Min=58, Avg=22672.45, 90=95, 99=112, 99.9=134, 99.99=23035903] 
+2023-01-09 15:33:58:531 770 sec: 1670950 operations; 2100 current ops/sec; est completion in 2 minutes [INSERT: Count=21000, Max=23117823, Min=58, Avg=22384.71, 90=73, 99=99, 99.9=34303, 99.99=22560767] 
+2023-01-09 15:34:08:531 780 sec: 1699950 operations; 2900 current ops/sec; est completion in 2 minutes [INSERT: Count=29000, Max=22953983, Min=57, Avg=22547.74, 90=65, 99=87, 99.9=130, 99.99=22839295] 
+2023-01-09 15:34:18:531 790 sec: 1712950 operations; 1300 current ops/sec; est completion in 2 minutes [INSERT: Count=13000, Max=22495231, Min=58, Avg=22293.42, 90=64, 99=86, 99.9=24623, 99.99=22446079] 
+2023-01-09 15:34:28:531 800 sec: 1748950 operations; 3600 current ops/sec; est completion in 1 minute [INSERT: Count=36000, Max=23068671, Min=57, Avg=22388.29, 90=68, 99=96, 99.9=141, 99.99=22740991] 
+2023-01-09 15:34:38:531 810 sec: 1756950 operations; 800 current ops/sec; est completion in 1 minute [INSERT: Count=8000, Max=23019519, Min=58, Avg=22489.18, 90=64, 99=86, 99.9=128, 99.99=22724607] 
+2023-01-09 15:34:48:531 820 sec: 1796950 operations; 4000 current ops/sec; est completion in 1 minute [INSERT: Count=40000, Max=24477695, Min=58, Avg=23253.73, 90=69, 99=97, 99.9=143, 99.99=23937023] 
+2023-01-09 15:34:58:531 830 sec: 1801950 operations; 500 current ops/sec; est completion in 1 minute [INSERT: Count=5000, Max=23920639, Min=58, Avg=23564.57, 90=64, 99=87, 99.9=115, 99.99=23658495] 
+2023-01-09 15:35:08:531 840 sec: 1833060 operations; 3111 current ops/sec; est completion in 1 minute [INSERT: Count=31112, Max=24150015, Min=57, Avg=24125.75, 90=65, 99=87, 99.9=22577151, 99.99=23838719] 
+2023-01-09 15:35:18:531 850 sec: 1849950 operations; 1689 current ops/sec; est completion in 1 minute [INSERT: Count=16888, Max=23707647, Min=58, Avg=21489.64, 90=72, 99=99, 99.9=144, 99.99=22872063] 
+2023-01-09 15:35:28:531 860 sec: 1869950 operations; 2000 current ops/sec; est completion in 1 minute [INSERT: Count=20000, Max=22659071, Min=57, Avg=22219.74, 90=65, 99=87, 99.9=126, 99.99=22511615] 
+2023-01-09 15:35:38:531 870 sec: 1899950 operations; 3000 current ops/sec; est completion in 46 seconds [INSERT: Count=30000, Max=23330815, Min=57, Avg=22442.42, 90=70, 99=97, 99.9=77951, 99.99=22970367] 
+2023-01-09 15:35:48:531 880 sec: 1910950 operations; 1100 current ops/sec; est completion in 42 seconds [INSERT: Count=11000, Max=23035903, Min=57, Avg=22718.63, 90=64, 99=88, 99.9=127, 99.99=22970367] 
+2023-01-09 15:35:58:531 890 sec: 1946950 operations; 3600 current ops/sec; est completion in 25 seconds [INSERT: Count=36000, Max=23560191, Min=57, Avg=22963.25, 90=70, 99=97, 99.9=27711, 99.99=23330815] 
+2023-01-09 15:36:08:531 900 sec: 1953950 operations; 700 current ops/sec; est completion in 22 seconds [INSERT: Count=7000, Max=23117823, Min=58, Avg=22993.49, 90=64, 99=87, 99.9=125, 99.99=23101439] 
+2023-01-09 15:36:18:531 910 sec: 1995500 operations; 4155 current ops/sec; est completion in 3 second [INSERT: Count=41552, Max=23920639, Min=57, Avg=23397.95, 90=65, 99=87, 99.9=25199, 99.99=23396351] 
+2023-01-09 15:36:28:531 920 sec: 1999950 operations; 445 current ops/sec; est completion in 1 second [INSERT: Count=4448, Max=23314431, Min=57, Avg=20722.23, 90=65, 99=85, 99.9=122, 99.99=23314431] 
+2023-01-09 15:36:38:531 930 sec: 1999989 operations; 3.9 current ops/sec; est completion in 1 second [CLEANUP: Count=39, Max=1039, Min=110, Avg=192.23, 90=197, 99=1039, 99.9=1039, 99.99=1039] [INSERT: Count=39, Max=23019519, Min=20332544, Avg=21714051.28, 90=22577151, 99=23019519, 99.9=23019519, 99.99=23019519] 
+2023-01-09 15:36:40:523 931 sec: 2000000 operations; 5.52 current ops/sec; [CLEANUP: Count=11, Max=184, Min=110, Avg=146.18, 90=182, 99=184, 99.9=184, 99.99=184] [INSERT: Count=11, Max=20938751, Min=16531456, Avg=19436637.09, 90=20856831, 99=20938751, 99.9=20938751, 99.99=20938751] 
+[OVERALL], RunTime(ms), 931992
+[OVERALL], Throughput(ops/sec), 2145.941166876969
+[TOTAL_GCS_PS_Scavenge], Count, 38
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 1010
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.10837002892728692
+[TOTAL_GCS_PS_MarkSweep], Count, 2
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 109
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.011695379359479481
+[TOTAL_GCs], Count, 40
+[TOTAL_GC_TIME], Time(ms), 1119
+[TOTAL_GC_TIME_%], Time(%), 0.12006540828676641
+[CLEANUP], Operations, 50
+[CLEANUP], AverageLatency(us), 182.1
+[CLEANUP], MinLatency(us), 110
+[CLEANUP], MaxLatency(us), 1039
+[CLEANUP], 95thPercentileLatency(us), 208
+[CLEANUP], 99thPercentileLatency(us), 1039
+[INSERT], Operations, 2000000
+[INSERT], AverageLatency(us), 23176.995134
+[INSERT], MinLatency(us), 57
+[INSERT], MaxLatency(us), 30130175
+[INSERT], 95thPercentileLatency(us), 97
+[INSERT], 99thPercentileLatency(us), 135
+[INSERT], Return=OK, 2000
+[INSERT], Return=BATCHED_OK, 1998000

@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "userId": "benchANT",
+    "projectId": "tracing",
+    "batchId": "ycsb",
+    "configurationId": "mysql-8031-ebpf-persist-read-heavy",
+    "configurationLabel": "mysql-8031-ebpf-persist-read-heavy",
+    "executions": 1,
+    "executionCounter": 1
+  },
+  "resourceProvider": {
+    "name": "EC2",
+    "api": "EC2"
+  },
+  "dbmsDeployment": {
+    "dbmsType": "MYSQL",
+    "operationType": "DBMS",
+    "version": "8.0.31",
+    "DBMS": {
+      "dataNodes": {
+        "numberOfNodes": 1,
+        "resource": {
+          "costs": {
+            "storageCosts": 0.12,
+            "vmCosts": 0.115
+          },
+          "ec2Vm": {
+            "regionName": "eu-central-1",
+            "instanceType": "m5.large",
+            "architecture": "x86_64",
+            "imageDistribution": "ubuntu",
+            "imageVersion": "20.04",
+            "volumeType": "GP2",
+            "volumeSize": 100,
+            "iops": 100
+          }
+        },
+        "replicationFactor": 1,
+        "memoryAllocation": 0.75,
+        "tracing": "EBPF",
+        "ebpfTracing": "PERSIST"
+      }
+    }
+  },
+  "benchmarkDeployment": {
+    "benchmarkNodes": {
+      "numberOfNodes": 1,
+      "resource": {
+        "ec2Vm": {
+          "regionName": "eu-central-1",
+          "instanceType": "c5.4xlarge",
+          "architecture": "x86_64",
+          "imageDistribution": "ubuntu",
+          "imageVersion": "20.04",
+          "volumeType": "GP2",
+          "volumeSize": 100,
+          "iops": 100
+        }
+      }
+    }
+  },
+  "benchmark": {
+    "id": "read-heavy",
+    "distribution": "YCSB",
+    "version": "0.17.0",
+    "ycsb": {
+      "executeLoadPhase": true,
+      "executeRunPhase": true,
+      "dbmsEndpoints": [],
+      "workload": {
+        "workloadType": "LOAD",
+        "workloadClass": "site.ycsb.workloads.CoreWorkload",
+        "maxExecutionTime": 1800,
+        "threadCount": 50,
+        "recordCount": 2000000,
+        "insertStart": 2000001,
+        "insertCount": 0,
+        "operations": 54000000,
+        "targetOps": 0,
+        "fieldCount": 10,
+        "fieldLength": 500,
+        "readAllFileds": true,
+        "readModifyWriteProportion": 0,
+        "requestdistribution": "ZIPFIAN",
+        "scanLengthDistribution": "UNIFORM",
+        "insertOrder": "ORDERED",
+        "readProportion": 0.9,
+        "updateProportion": 0.0,
+        "insertProportion": 0.1,
+        "scanProportion": 0.0,
+        "maxScanLength": 0,
+        "coreWorkloadInsertionRetryLimit": 3,
+        "coreWorkloadInsertionRetryInterval": 3,
+        "batchSize": 1
+      }
+    }
+  }
+}

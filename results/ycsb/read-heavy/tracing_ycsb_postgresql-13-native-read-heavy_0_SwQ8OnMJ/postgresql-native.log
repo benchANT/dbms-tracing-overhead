@@ -1,0 +1,12 @@
+2023-01-17 17:37:32.258 UTC [32866] LOG:  starting PostgreSQL 13.9 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, 64-bit
+2023-01-17 17:37:32.259 UTC [32866] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-01-17 17:37:32.259 UTC [32866] LOG:  listening on IPv6 address "::", port 5432
+2023-01-17 17:37:32.264 UTC [32866] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-01-17 17:37:32.270 UTC [32868] LOG:  database system was shut down at 2023-01-17 17:36:40 UTC
+2023-01-17 17:37:32.274 UTC [32866] LOG:  database system is ready to accept connections
+2023-01-17 17:37:33.272 UTC [32866] LOG:  received SIGHUP, reloading configuration files
+2023-01-17 17:37:33.273 UTC [32866] LOG:  received SIGHUP, reloading configuration files
+2023-01-17 17:37:37.192 UTC [33339] LOG:  statement: CREATE DATABASE benchdb;
+2023-01-17 17:37:41.297 UTC [33804] LOG:  statement: CREATE USER benchant;
+2023-01-17 17:37:45.055 UTC [34269] LOG:  statement: ALTER USER benchant WITH PASSWORD 'benchANT2022';
+2023-01-17 17:37:48.977 UTC [34735] LOG:  statement: grant all privileges on database benchdb to benchant;

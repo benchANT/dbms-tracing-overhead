@@ -1,0 +1,31 @@
+/usr/local/mysql/bin/mysqld, Version: 8.0.31 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /tmp/mysql.sock
+Time                 Id Command    Argument
+2023-01-18T17:05:15.677717Z	    0 Execute	CREATE TABLE performance_schema.innodb_redo_log_files(
+`FILE_ID` BIGINT NOT NULL COMMENT 'Id of the file.',
+`FILE_NAME` VARCHAR(2000) NOT NULL COMMENT 'Path to the file.',
+`START_LSN` BIGINT NOT NULL COMMENT 'LSN of the first block in the file.',
+`END_LSN` BIGINT NOT NULL COMMENT 'LSN after the last block in the file.',
+`SIZE_IN_BYTES` BIGINT NOT NULL COMMENT 'Size of the file (in bytes).',
+`IS_FULL` TINYINT NOT NULL COMMENT '1 iff file has no free space inside.',
+`CONSUMER_LEVEL` INT NOT NULL COMMENT 'All redo log consumers registered on smaller levels than this value, have already consumed this file.'
+)engine = 'performance_schema'
+/usr/local/mysql/bin/mysqld, Version: 8.0.31 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /tmp/mysql.sock
+Time                 Id Command    Argument
+2023-01-18T17:05:19.167900Z	    8 Connect	root@localhost on mysql using Socket
+2023-01-18T17:05:19.168223Z	    8 Query	select @@version_comment limit 1
+2023-01-18T17:05:19.168356Z	    8 Query	CREATE USER 'benchant'@'%' IDENTIFIED WITH 'mysql_native_password' BY <secret>
+2023-01-18T17:05:19.178804Z	    8 Quit	
+2023-01-18T17:05:22.816163Z	    9 Connect	root@localhost on mysql using Socket
+2023-01-18T17:05:22.816320Z	    9 Query	select @@version_comment limit 1
+2023-01-18T17:05:22.816439Z	    9 Query	CREATE DATABASE benchdb
+2023-01-18T17:05:22.823449Z	    9 Quit	
+2023-01-18T17:05:26.609653Z	   10 Connect	root@localhost on mysql using Socket
+2023-01-18T17:05:26.609806Z	   10 Query	select @@version_comment limit 1
+2023-01-18T17:05:26.609932Z	   10 Query	GRANT ALL PRIVILEGES ON benchdb.* TO 'benchant'@'%'
+2023-01-18T17:05:26.614749Z	   10 Quit	
+2023-01-18T17:05:30.392442Z	   11 Connect	root@localhost on mysql using Socket
+2023-01-18T17:05:30.392601Z	   11 Query	select @@version_comment limit 1
+2023-01-18T17:05:30.392717Z	   11 Query	FLUSH PRIVILEGES
+2023-01-18T17:05:30.396486Z	   11 Quit	

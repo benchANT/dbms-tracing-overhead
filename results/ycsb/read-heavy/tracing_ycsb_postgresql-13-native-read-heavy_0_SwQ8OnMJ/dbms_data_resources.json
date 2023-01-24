@@ -1,0 +1,336 @@
+{
+  "changed": true,
+  "deprecations": [
+    {
+      "collection_name": "amazon.aws",
+      "date": "2024-12-01",
+      "msg": "Support for the 'EC2_REGION', 'EC2_ACCESS_KEY', 'EC2_SECRET_KEY', 'EC2_SECURITY_TOKEN', 'EC2_URL', and 'S3_URL' environment variables has been deprecated.  These variables are currently used for all AWS services which can cause confusion.  We recomend using the relevant module parameters or alternatively the 'AWS_REGION', 'AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', and 'AWS_URL' environment variables can be used instead."
+    }
+  ],
+  "msg": "All items completed",
+  "data_results": [
+    {
+      "ansible_loop_var": "item",
+      "changed": true,
+      "failed": false,
+      "instance_ids": [
+        "i-026ce00e849c8eae3"
+      ],
+      "instances": [
+        {
+          "ami_launch_index": 0,
+          "architecture": "x86_64",
+          "block_device_mappings": [
+            {
+              "device_name": "/dev/sda1",
+              "ebs": {
+                "attach_time": "2023-01-17T17:27:14+00:00",
+                "delete_on_termination": true,
+                "status": "attached",
+                "volume_id": "vol-001fde86e2ae71869"
+              }
+            }
+          ],
+          "capacity_reservation_specification": {
+            "capacity_reservation_preference": "open"
+          },
+          "client_token": "0955468887e7416082c7ba90c801561d",
+          "cpu_options": {
+            "core_count": 1,
+            "threads_per_core": 2
+          },
+          "ebs_optimized": false,
+          "ena_support": true,
+          "enclave_options": {
+            "enabled": false
+          },
+          "hibernation_options": {
+            "configured": false
+          },
+          "hypervisor": "xen",
+          "image_id": "ami-076bdd070268f9b8d",
+          "instance_id": "i-026ce00e849c8eae3",
+          "instance_type": "m5.large",
+          "key_name": "baas_dev",
+          "launch_time": "2023-01-17T17:27:13+00:00",
+          "maintenance_options": {
+            "auto_recovery": "default"
+          },
+          "metadata_options": {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "optional",
+            "instance_metadata_tags": "disabled",
+            "state": "applied"
+          },
+          "monitoring": {
+            "state": "disabled"
+          },
+          "network_interfaces": [
+            {
+              "association": {
+                "ip_owner_id": "amazon",
+                "public_dns_name": "ec2-3-125-50-154.eu-central-1.compute.amazonaws.com",
+                "public_ip": "3.125.50.154"
+              },
+              "attachment": {
+                "attach_time": "2023-01-17T17:27:13+00:00",
+                "attachment_id": "eni-attach-09ee61efae20cac40",
+                "delete_on_termination": true,
+                "device_index": 0,
+                "network_card_index": 0,
+                "status": "attached"
+              },
+              "description": "",
+              "groups": [
+                {
+                  "group_id": "sg-070a926c34814caba",
+                  "group_name": "baas-dbms"
+                },
+                {
+                  "group_id": "sg-094cb4a4651310ea0",
+                  "group_name": "baas-ssh"
+                },
+                {
+                  "group_id": "sg-3734875b",
+                  "group_name": "default"
+                }
+              ],
+              "interface_type": "interface",
+              "ipv6_addresses": [],
+              "mac_address": "02:26:66:bc:b7:b6",
+              "network_interface_id": "eni-0efa3e2f0cf0327d7",
+              "owner_id": "584241909684",
+              "private_dns_name": "ip-172-31-28-51.eu-central-1.compute.internal",
+              "private_ip_address": "172.31.28.51",
+              "private_ip_addresses": [
+                {
+                  "association": {
+                    "ip_owner_id": "amazon",
+                    "public_dns_name": "ec2-3-125-50-154.eu-central-1.compute.amazonaws.com",
+                    "public_ip": "3.125.50.154"
+                  },
+                  "primary": true,
+                  "private_dns_name": "ip-172-31-28-51.eu-central-1.compute.internal",
+                  "private_ip_address": "172.31.28.51"
+                }
+              ],
+              "source_dest_check": true,
+              "status": "in-use",
+              "subnet_id": "subnet-324f4259",
+              "vpc_id": "vpc-d58ed7be"
+            }
+          ],
+          "placement": {
+            "availability_zone": "eu-central-1a",
+            "group_name": "",
+            "tenancy": "default"
+          },
+          "platform_details": "Linux/UNIX",
+          "private_dns_name": "ip-172-31-28-51.eu-central-1.compute.internal",
+          "private_dns_name_options": {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+          },
+          "private_ip_address": "172.31.28.51",
+          "product_codes": [],
+          "public_dns_name": "ec2-3-125-50-154.eu-central-1.compute.amazonaws.com",
+          "public_ip_address": "3.125.50.154",
+          "root_device_name": "/dev/sda1",
+          "root_device_type": "ebs",
+          "security_groups": [
+            {
+              "group_id": "sg-070a926c34814caba",
+              "group_name": "baas-dbms"
+            },
+            {
+              "group_id": "sg-094cb4a4651310ea0",
+              "group_name": "baas-ssh"
+            },
+            {
+              "group_id": "sg-3734875b",
+              "group_name": "default"
+            }
+          ],
+          "source_dest_check": true,
+          "state": {
+            "code": 16,
+            "name": "running"
+          },
+          "state_transition_reason": "",
+          "subnet_id": "subnet-324f4259",
+          "tags": {
+            "Name": "BaaS-POSTGRESQL-data-0-137ee0e7-ebc0-5f4e-a14a-7968be8cb8b1",
+            "project": "tracing",
+            "service": "baas",
+            "type": "dbms"
+          },
+          "usage_operation": "RunInstances",
+          "usage_operation_update_time": "2023-01-17T17:27:13+00:00",
+          "virtualization_type": "hvm",
+          "vpc_id": "vpc-d58ed7be"
+        }
+      ],
+      "invocation": {
+        "module_args": {
+          "aap_callback": null,
+          "access_key": "AKIAITUSIIVIIVYRSRRQ",
+          "availability_zone": null,
+          "aws_access_key": "AKIAITUSIIVIIVYRSRRQ",
+          "aws_ca_bundle": null,
+          "aws_config": null,
+          "aws_secret_key": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+          "count": null,
+          "cpu_credit_specification": null,
+          "cpu_options": null,
+          "debug_botocore_endpoint_logs": false,
+          "detailed_monitoring": null,
+          "ebs_optimized": null,
+          "endpoint_url": null,
+          "exact_count": null,
+          "filters": {
+            "image-id": [
+              "ami-076bdd070268f9b8d"
+            ],
+            "instance-state-name": [
+              "pending",
+              "running",
+              "stopping",
+              "stopped"
+            ],
+            "tag:Name": [
+              "BaaS-POSTGRESQL-data-0-137ee0e7-ebc0-5f4e-a14a-7968be8cb8b1"
+            ]
+          },
+          "hibernation_options": false,
+          "iam_instance_profile": null,
+          "image": null,
+          "image_id": "ami-076bdd070268f9b8d",
+          "instance_ids": [],
+          "instance_initiated_shutdown_behavior": null,
+          "instance_type": "m5.large",
+          "key_name": "baas_dev",
+          "launch_template": null,
+          "metadata_options": null,
+          "name": "BaaS-POSTGRESQL-data-0-137ee0e7-ebc0-5f4e-a14a-7968be8cb8b1",
+          "network": {
+            "assign_public_ip": true
+          },
+          "placement_group": null,
+          "profile": null,
+          "purge_tags": true,
+          "region": "eu-central-1",
+          "secret_key": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+          "security_group": null,
+          "security_groups": [
+            "default",
+            "baas-ssh",
+            "baas-dbms"
+          ],
+          "session_token": null,
+          "state": "started",
+          "tags": {
+            "Name": "BaaS-POSTGRESQL-data-0-137ee0e7-ebc0-5f4e-a14a-7968be8cb8b1",
+            "project": "tracing",
+            "service": "baas",
+            "type": "dbms"
+          },
+          "tenancy": null,
+          "termination_protection": null,
+          "user_data": null,
+          "validate_certs": true,
+          "volumes": [
+            {
+              "device_name": "/dev/sda1",
+              "ebs": {
+                "delete_on_termination": true,
+                "volume_size": 100,
+                "volume_type": "gp2"
+              }
+            }
+          ],
+          "vpc_subnet_id": null,
+          "wait": true,
+          "wait_timeout": 600
+        }
+      },
+      "item": 0,
+      "spec": {
+        "BlockDeviceMappings": [
+          {
+            "DeviceName": "/dev/sda1",
+            "Ebs": {
+              "DeleteOnTermination": true,
+              "VolumeSize": 100,
+              "VolumeType": "gp2"
+            }
+          }
+        ],
+        "ClientToken": "0955468887e7416082c7ba90c801561d",
+        "ImageId": "ami-076bdd070268f9b8d",
+        "InstanceType": "m5.large",
+        "KeyName": "baas_dev",
+        "MaxCount": 1,
+        "MinCount": 1,
+        "NetworkInterfaces": [
+          {
+            "AssociatePublicIpAddress": true,
+            "DeviceIndex": 0,
+            "Groups": [
+              "sg-070a926c34814caba",
+              "sg-094cb4a4651310ea0",
+              "sg-3734875b"
+            ],
+            "SubnetId": "subnet-324f4259"
+          }
+        ],
+        "TagSpecifications": [
+          {
+            "ResourceType": "volume",
+            "Tags": [
+              {
+                "Key": "service",
+                "Value": "baas"
+              },
+              {
+                "Key": "type",
+                "Value": "dbms"
+              },
+              {
+                "Key": "project",
+                "Value": "tracing"
+              },
+              {
+                "Key": "Name",
+                "Value": "BaaS-POSTGRESQL-data-0-137ee0e7-ebc0-5f4e-a14a-7968be8cb8b1"
+              }
+            ]
+          },
+          {
+            "ResourceType": "instance",
+            "Tags": [
+              {
+                "Key": "service",
+                "Value": "baas"
+              },
+              {
+                "Key": "type",
+                "Value": "dbms"
+              },
+              {
+                "Key": "project",
+                "Value": "tracing"
+              },
+              {
+                "Key": "Name",
+                "Value": "BaaS-POSTGRESQL-data-0-137ee0e7-ebc0-5f4e-a14a-7968be8cb8b1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

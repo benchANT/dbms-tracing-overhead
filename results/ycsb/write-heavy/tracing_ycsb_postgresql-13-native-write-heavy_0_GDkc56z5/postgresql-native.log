@@ -1,0 +1,12 @@
+2023-01-03 13:28:46.652 UTC [32951] LOG:  starting PostgreSQL 13.9 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, 64-bit
+2023-01-03 13:28:46.652 UTC [32951] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2023-01-03 13:28:46.652 UTC [32951] LOG:  listening on IPv6 address "::", port 5432
+2023-01-03 13:28:46.656 UTC [32951] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-01-03 13:28:46.661 UTC [32953] LOG:  database system was shut down at 2023-01-03 13:27:56 UTC
+2023-01-03 13:28:46.663 UTC [32951] LOG:  database system is ready to accept connections
+2023-01-03 13:28:47.665 UTC [32951] LOG:  received SIGHUP, reloading configuration files
+2023-01-03 13:28:47.666 UTC [32951] LOG:  received SIGHUP, reloading configuration files
+2023-01-03 13:28:51.433 UTC [33424] LOG:  statement: CREATE DATABASE benchdb;
+2023-01-03 13:28:55.350 UTC [33889] LOG:  statement: CREATE USER root;
+2023-01-03 13:28:59.308 UTC [34354] LOG:  statement: ALTER USER root WITH PASSWORD 'pCm9YZpSAres';
+2023-01-03 13:29:03.132 UTC [34819] LOG:  statement: grant all privileges on database benchdb to root;
